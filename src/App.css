@@ -1,4 +1,22 @@
-.App {
-  text-align: center;
-  /* background-color: black; */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    font-size: 100%;
+    background-color: black;
+    font-weight: 350;
+}
+
+.menuHamburguesa {
+    opacity: 0 !important;
+    display: none !important;
+}
+
+.menuHamburguesaBg {
+    transition: .3s ease;
+    background-color: transparent !important;
 }

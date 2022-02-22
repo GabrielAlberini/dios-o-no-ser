@@ -1,23 +1,29 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-const Banner = () => {
+const Banner = ({children}) => {
     return (
         <ContainerImgBanner>
-            <ImgBanner src="https://i.ibb.co/mTqxkd4/Whats-App-Image-2022-02-17-at-15-03-07.jpg" alt="foto de portada" />
+            <ImgBanner src="https://i.ibb.co/zQHc4B1/Foto028.jpg" alt="" />
+            {children}
         </ContainerImgBanner>
     )
 }
 
-/*Styles*/
+export { Banner };
 
 const ContainerImgBanner = styled.section`
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
+    position: relative;
 `
 
 const ImgBanner = styled.img`
     max-width: 100%;
+    width: 100%;
+    height: auto;
+    filter: brightness(0.3);
+    @media screen and (max-width: 780px){
+        object-fit: cover;
+    } 
 `
-
-export { Banner }
