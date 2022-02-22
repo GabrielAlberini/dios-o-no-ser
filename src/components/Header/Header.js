@@ -115,7 +115,7 @@ const List = styled.ul`
     } 
 `
 const ItemList = styled.li`
-    width: 180px;
+    width: 190px;
     list-style: none;
     cursor: pointer;
     padding: 1rem;
