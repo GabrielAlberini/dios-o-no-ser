@@ -12,11 +12,10 @@ body {
 }
 
 .menuHamburguesa {
-    opacity: 0 !important;
-    display: none !important;
+    opacity: 1 !important;
+    display: flex !important;
 }
 
 .menuHamburguesaBg {
     transition: .3s ease;
-    background-color: transparent !important;
 }

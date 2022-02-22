@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Header = () => {
-    const [menuHam, setMenuHam] = useState(true)
+    const [menuHam, setMenuHam] = useState(false)
 
     const handleClick = () => {
         setMenuHam(!menuHam)
@@ -51,13 +51,12 @@ const HeaderContainer = styled.header`
 `
 const CloseNavContainer = styled.section`
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background-color: black;
     @media screen and (max-width: 480px){
+        position: absolute;
+        top: 0;
+        left: 0;
         position: fixed;
+        background-color: black;
         display: block;
     } 
 `
@@ -103,6 +102,7 @@ const List = styled.ul`
     justify-content: space-around;
     text-decoration: none;
     @media screen and (max-width: 480px){
+        display: none;
         opacity: 1;
         pointer-events: auto;
         margin-top: 3rem;
@@ -115,7 +115,7 @@ const List = styled.ul`
     } 
 `
 const ItemList = styled.li`
-    width: 500px;
+    width: 180px;
     list-style: none;
     cursor: pointer;
     padding: 1rem;
