@@ -24,16 +24,16 @@ const Header = () => {
                             <ItemList>Sinopsis</ItemList>
                         </Link>
                         <Link style={{textDecoration:'none'}} to={'/obra'}>
-                            <ItemList>La obra</ItemList>
+                            <ItemList>Obra</ItemList>
                         </Link>
                         <Link style={{textDecoration:'none'}} to={'/espectaculo'}>
-                            <ItemList>El espectáculo</ItemList>
+                            <ItemList>Espectáculo</ItemList>
                         </Link>
                         <Link style={{textDecoration:'none'}} to={'/autor'}>
                             <ItemList>Autor</ItemList>
                         </Link>
                         <a style={{textDecoration:'none'}} href="https://publico.alternativateatral.com/entradas76333-dios-o-no-ser?o=14">
-                            <ItemList>Comprar entradas</ItemList>
+                            <ItemList>Entradas</ItemList>
                         </a>
                         <ContainerIcons>
                             <a href="https://www.facebook.com/diosonosersf">
@@ -101,16 +101,16 @@ const List = styled.ul`
         flex-direction: column;
         align-items: center;
         width: 100%;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid rgb(133, 133, 133, .4);
     } 
 `
 const ItemList = styled.li`
-    width: 190px;
+    width: auto;
     list-style: none;
     cursor: pointer;
     padding: 1rem;
-    font-size: 1.2rem;
     margin: 0 .2rem;
+    font-size: 1.2rem;
     transition: .4s ease;
     text-align: center;
     border-radius: 2px;
@@ -130,7 +130,6 @@ const SocialIconHeader =styled(FontAwesomeIcon)`
     font-size: 1.5rem;
     padding: 1rem;
     cursor: pointer;
-    transition: all .2s ease;
     transition: .4s ease;
     margin: 0 .3rem;
     &:hover {
@@ -142,7 +141,6 @@ const SocialIconHeader =styled(FontAwesomeIcon)`
 `
 const IconMenu = styled(FontAwesomeIcon)`
     font-size: 1.5rem;
-    padding: 1rem;
     cursor: pointer;
     transition: .2s ease;
     &:hover {
