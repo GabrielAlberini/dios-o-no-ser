@@ -23,4 +23,9 @@ const ImgBanner = styled.img`
     height: auto;
     filter: brightness(0.3);
     object-fit: cover;
+    position: relative;
+    @media screen and (max-width: 480px){
+        width: auto;
+        right: 48rem;
+    } 
 `

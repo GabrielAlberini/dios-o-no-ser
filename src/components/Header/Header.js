@@ -59,6 +59,9 @@ const HeaderContainer = styled.header`
     width: 100%;
     padding: 2rem 0;
     border-bottom: 2px solid rgb(133, 133, 133, .2);
+    @media screen and (max-width: 480px){
+        padding: 0;  
+    } 
 `
 const CloseNavContainer = styled.section`
     width: 100%;
