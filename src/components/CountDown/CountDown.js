@@ -93,7 +93,7 @@ const TimerContainer = styled.section`
     width: 100%;
     height: 100%;
     @media screen and (max-width: 480px){
-    margin-top: 3rem;
+    padding-top: 3rem;
     }    
 `
 const PartsOfTimer = styled.section`
