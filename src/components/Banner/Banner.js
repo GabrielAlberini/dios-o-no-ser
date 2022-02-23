@@ -16,6 +16,9 @@ const ContainerImgBanner = styled.section`
     height: 100vh;
     display: flex;
     position: relative;
+    @media screen and (max-width: 480px){
+        overflow-x: hidden;
+    } 
 `
 
 const ImgBanner = styled.img`
