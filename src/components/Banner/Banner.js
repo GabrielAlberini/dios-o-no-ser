@@ -19,11 +19,8 @@ const ContainerImgBanner = styled.section`
 `
 
 const ImgBanner = styled.img`
-    max-width: 100%;
     width: 100%;
     height: auto;
     filter: brightness(0.3);
-    @media screen and (max-width: 780px){
-        object-fit: cover;
-    } 
+    object-fit: cover;
 `
