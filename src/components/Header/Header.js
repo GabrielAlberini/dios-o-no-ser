@@ -17,7 +17,7 @@ const Header = () => {
             <NavigationBar>
                 <CloseNavContainer className={menuHam && 'menuHamburguesaBg'}>
                     <BottonCloseNavContainer>
-                        <SocialIconHeader icon={faBars} onClick={handleClick} />
+                        <IconMenu icon={faBars} onClick={handleClick} />
                     </BottonCloseNavContainer>
                     <List className={menuHam && 'menuHamburguesa'}>
                         <Link style={{textDecoration:'none'}} to={'/'}>
@@ -78,30 +78,6 @@ const BottonCloseNavContainer = styled.div`
         display: block;
     } 
 `
-const BottonCloseNav = styled.button`
-    margin: .5rem;
-    width: 40px;
-    height: 30px; 
-    color: black;
-    font-size: 1rem;
-    float: right;
-    border: none;
-    outline: none;
-    font-size: 1.6rem;
-    background: #520a19; 
-    color: white;
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New';
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: .3s ease;
-    &:hover {
-        background: white; 
-        color: black;
-    }
-`
 
 const NavigationBar =styled.nav`
     width: 60%;    
@@ -159,6 +135,18 @@ const SocialIconHeader =styled(FontAwesomeIcon)`
     }
     @media screen and (max-width: 480px){
         margin: 0 1rem; 
+    }
+`
+const IconMenu = styled(FontAwesomeIcon)`
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: .2s ease;
+    &:hover {
+        background: #23060c;
+    }
+    @media screen and (max-width: 480px){
+        margin: 1rem; 
     }
 `
 
