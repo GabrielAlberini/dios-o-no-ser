@@ -39,9 +39,9 @@ const Header = () => {
                             <a href="https://www.facebook.com/diosonosersf">
                                 <SocialIconHeader icon={faFacebook} />
                             </a>
-                            <a href="+5493424074506">
+                            {/* <a href="+5493424074506">
                                 <SocialIconHeader icon={faWhatsapp} />
-                            </a>
+                            </a> */}
                             <a href="https://www.instagram.com/dons.sf/">
                                 <SocialIconHeader icon={faInstagram} />
                             </a>                            
