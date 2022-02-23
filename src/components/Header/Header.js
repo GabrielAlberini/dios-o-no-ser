@@ -1,6 +1,9 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { faFacebook, faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import {faBars} from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     const [menuHam, setMenuHam] = useState(false)
@@ -14,7 +17,7 @@ const Header = () => {
             <NavigationBar>
                 <CloseNavContainer className={menuHam && 'menuHamburguesaBg'}>
                     <BottonCloseNavContainer>
-                        <BottonCloseNav onClick={handleClick}> x</BottonCloseNav>
+                        <SocialIconHeader icon={faBars} onClick={handleClick} />
                     </BottonCloseNavContainer>
                     <List className={menuHam && 'menuHamburguesa'}>
                         <Link style={{textDecoration:'none'}} to={'/'}>
@@ -29,12 +32,20 @@ const Header = () => {
                         <Link style={{textDecoration:'none'}} to={'/autor'}>
                             <ItemList>Autor</ItemList>
                         </Link>
-                        <a style={{textDecoration:'none'}} href="https://wa.me/+5493424074506">
-                            <ItemList>Contacto</ItemList>
-                        </a>
                         <a style={{textDecoration:'none'}} href="https://publico.alternativateatral.com/entradas76333-dios-o-no-ser?o=14">
                             <ItemList>Comprar entradas</ItemList>
                         </a>
+                        <ContainerIcons>
+                            <a href="https://www.facebook.com/diosonosersf">
+                                <SocialIconHeader icon={faFacebook} />
+                            </a>
+                            <a href="+5493424074506">
+                                <SocialIconHeader icon={faWhatsapp} />
+                            </a>
+                            <a href="https://www.instagram.com/dons.sf/">
+                                <SocialIconHeader icon={faInstagram} />
+                            </a>                            
+                        </ContainerIcons>
                     </List>
                 </CloseNavContainer>
             </NavigationBar>
@@ -126,6 +137,28 @@ const ItemList = styled.li`
     border-radius: 2px;
     &:hover{
         background: #23060c;
+    }
+`
+const ContainerIcons = styled.article`
+    display: flex;
+    margin-left: 1.5rem;
+    @media screen and (max-width: 480px){
+        margin-top: .6rem;
+        margin-left: 0;
+    }
+`
+const SocialIconHeader =styled(FontAwesomeIcon)`
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all .2s ease;
+    transition: .4s ease;
+    margin: 0 .3rem;
+    &:hover {
+        background: #23060c;
+    }
+    @media screen and (max-width: 480px){
+        margin: 0 1rem; 
     }
 `
 
