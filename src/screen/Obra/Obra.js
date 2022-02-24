@@ -6,7 +6,7 @@ const Obra = () => {
         <Layout>
             <ContainerDataObra>
                 <ContainerTextHome>
-                    <TitleSection>Dios. O no ser</TitleSection>
+                    <TitleSection>Dios. O no ser.</TitleSection>
                     <TextHome>Tercera parte de la trilogía integrada por La velocidad del zoom del horizonte (2013) y Paradise by Design (2015).</TextHome>
                     <TextHome>A partir de un hecho real, la desaparición del vuelo 370 de Malaysia Airlines en el 2014, David Gaitán comenzó a elaborar este relato en el que una mujer, de la que nunca sabremos su nombre, decide <b>negarse</b> al mandato divino de ser Profeta, comenzando una huida imposible, en la que recorrerá de una manera muy particular el viaje del héroe. </TextHome>
                     <TextHome>Durante este viaje, la Profeta <b>antagonizará</b> con Dios, que tomará diversas formas y actitudes, aprovechando el autor estos encuentros para profundizar diversas cuestiones sobre la relación del hombre con la realidad, con sus limitaciones, con sus necedades. Una lucha que busca que el espectador se plantee casi sin darse cuenta, cuáles son sus elecciones, cuál es el rol que ha elegido para su vida.</TextHome> 
