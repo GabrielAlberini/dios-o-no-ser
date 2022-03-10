@@ -6,7 +6,7 @@ const Home = () => {
         <Layout>
             <ContainerDataHome>
                 <ContainerImgAutor>
-                        <ImgAutor src="https://i.ibb.co/C5cpBxN/dios-banner.png" />
+                        <ImgAutor src="https://i.ibb.co/LQ09mC1/Foto017.jpg" />
                         <SpanImg>Foto – Pablo Cánepa</SpanImg>
                 </ContainerImgAutor>
                 <ContainerTextHome>
