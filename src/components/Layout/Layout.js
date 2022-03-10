@@ -7,7 +7,7 @@ const Layout = ({children}) => {
     return (
         <>
         <Banner>
-            <CountDown />
+            {/* <CountDown /> */}
         </Banner>
         <Header />
         {children}
