@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Banner = ({children}) => {
     return (
         <ContainerImgBanner>
-            <ImgBanner src="https://i.ibb.co/C5cpBxN/dios-banner.png" alt="" />
+            <ImgBanner src="https://i.ibb.co/FbJcx9n/Foto048.jpg" alt="" />
             {children}
         </ContainerImgBanner>
     )
